@@ -289,12 +289,14 @@ img {
 }
 
 .form-field {
+  position: relative;
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
 
 .form-field input {
+  height: 40px;
   margin: 0;
   padding: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -317,6 +319,23 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+
+  display: inline-block;
+}
+
+.form-field input:hover ~ .form-icon,
+.form-field input:focus ~ .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-field input:hover,
+.form-field input:focus {
+  border: 1px solid var(--accent-color);
+}
 .comment {
   margin-bottom: 20px;
 }
