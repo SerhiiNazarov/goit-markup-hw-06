@@ -73,9 +73,11 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button type="button" data-modal-close class="button-close">
-              <img src="./images/vector.svg" alt="крестик" />
+              <svg width="18" height="18" class="button-close-icon">
+                <use href="./images/icons.svg#vector"></use>
+              </svg>
             </button>
-            <form class="form js-speaker-form">
+            <form class="form">
               <h2 class="form-title">
                 Оставьте свои данные, мы вам перезвоним
               </h2>
@@ -109,7 +111,7 @@
                 </span>
               </div>
 
-              <div class="form-field comment">
+              <div class="form-field">
                 <label for="comment">Комментарий</label>
                 <textarea
                   name="comment"
@@ -121,15 +123,17 @@
               </div>
 
               <div class="form-field checkbox">
-                <input type="checkbox" name="policy" id="policy" />
-                <label for="policy"
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a href=""> Условия договора</a>
+                <label for="policy">
+                  <input type="checkbox" name="policy" id="policy" />
+                  <span class="icon-checkbox"> </span>
+                  Соглашаюсь с рассылкой и принимаю &nbsp;
+                  <a href="" class="form-checkbox-link"> Условия договора</a>
                 </label>
               </div>
 
-              <br />
-              <button class="button" type="submit">Отправить</button>
+              <button class="button button-modal" type="submit">
+                Отправить
+              </button>
             </form>
           </div>
         </div>
