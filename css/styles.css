@@ -263,7 +263,7 @@ img {
   left: 50%;
 
   min-width: 528px;
-  min-height: 581px;
+  padding: 40px;
 
   background: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -279,10 +279,10 @@ img {
 .form {
   text-align: start;
   width: 448px;
-  margin: 40px;
 }
 
 .form-title {
+  display: block;
   margin-bottom: 12px;
   font-size: 20px;
   line-height: 1.15;
@@ -350,6 +350,7 @@ img {
 }
 
 textarea {
+  min-height: 120px;
   margin: 0;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -893,15 +894,14 @@ textarea {
 }
 
 .footer-modal {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .footer-modal-text {
   margin-bottom: 20px;
-
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
 
   color: var(--main-bg-color);
