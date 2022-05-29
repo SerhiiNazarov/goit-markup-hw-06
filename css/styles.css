@@ -439,6 +439,7 @@ textarea {
 }
 
 .button-close-icon {
+  height: 18px;
   fill: var(--title-text-color);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -911,7 +912,7 @@ textarea {
 }
 
 .footer-form-field {
-  display: inline;
+  display: inline-block;
 }
 
 .footer-form-field input[type='email'] {
@@ -944,6 +945,5 @@ textarea {
 }
 
 .footer-modal-icon {
-  margin-top: 8px;
   margin-left: 10px;
 }
